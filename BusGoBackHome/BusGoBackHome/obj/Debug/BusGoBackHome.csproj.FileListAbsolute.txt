@@ -1,0 +1,12 @@
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.pdb
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csprojResolveAssemblyReference.cache
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Form1.resources
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Properties.Resources.resources
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.GenerateResource.Cache
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.CoreCompileInputs.cache
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.exe
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.pdb
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.dll
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.xml
+C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe.config
