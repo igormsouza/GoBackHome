@@ -1,7 +1,6 @@
 # Welcome to GoBackHome
 Easiest way to check the public transport from Parkwest(Dublin 12) to another areas.
-Will you be able to check the next time of:
-- Bus
+- Bus (79a, 151)
 - Luas
 - Train
 
