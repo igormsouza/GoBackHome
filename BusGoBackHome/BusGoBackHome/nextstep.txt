@@ -1,0 +1,9 @@
+﻿Create a structure to read luas and train 
+
+http://luasforecasts.rpa.ie/analysis/view.aspx?id=7
+https://github.com/RoryH/dublinbus-luas-api/blob/master/lib/luas_stations.json
+https://api.thecosmicfrog.org/cgi-bin/luas-api.php?action=times&station=KYL
+
+http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML?StationDesc=Cherry%20Orchard
+http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByCodeXML?StationCode=CHORC
+http://api.irishrail.ie/realtime/index.htm?realtime_irishrail

@@ -10,3 +10,16 @@ C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHom
 C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.dll
 C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.xml
 C:\Users\806920\Documents\Visual Studio 2017\Projects\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe.config
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe.config
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.pdb
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.dll
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.xml
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csprojResolveAssemblyReference.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Form1.resources
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Properties.Resources.resources
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.GenerateResource.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.CoreCompileInputs.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.CopyComplete
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.exe
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.pdb
