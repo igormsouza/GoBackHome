@@ -15,6 +15,7 @@ namespace BusGoBackHome
     {
         private string bus79a = "https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=6030";
         private string bus151 = "https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=6243";
+        private string luas = "https://api.thecosmicfrog.org/cgi-bin/luas-api.php?action=times&station=KYL";
 
         private NotifyIcon trayIcon;
         private ContextMenu trayMenu;
@@ -95,11 +96,16 @@ namespace BusGoBackHome
                 WebClient client = new WebClient();
                 string reply79a = client.DownloadString(bus79a);
                 var objReplay79a = JsonConvert.DeserializeObject<TimeResultApi>(reply79a);
+
                 string reply151 = client.DownloadString(bus151);
                 var objReplay151 = JsonConvert.DeserializeObject<TimeResultApi>(reply151);
 
+                string replyLuas = client.DownloadString(luas);
+                var objReplayLuas = JsonConvert.DeserializeObject<LuasTimeResultApi>(replyLuas);
+
                 list.AddRange(objReplay79a.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
                 list.AddRange(objReplay151.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
+                list.AddRange(objReplayLuas.trams.Take(3).Select(o => new TimeItem("Luas " + o.destination, o.dueMinutes)).ToList());
 
                 list = list.OrderBy(o => o.DepartureTime).ToList();
             }
