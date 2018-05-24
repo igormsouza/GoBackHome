@@ -103,9 +103,12 @@ namespace BusGoBackHome
                 string replyLuas = client.DownloadString(luas);
                 var objReplayLuas = JsonConvert.DeserializeObject<LuasTimeResultApi>(replyLuas);
 
+                var objReplay860 = new DirectTimeResult();
+
                 list.AddRange(objReplay79a.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
                 list.AddRange(objReplay151.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
                 list.AddRange(objReplayLuas.trams.Take(3).Select(o => new TimeItem("Luas " + o.destination, o.dueMinutes)).ToList());
+                list.AddRange(objReplay860.Result.Take(3).Select(o => new TimeItem("860(Direct) ", o.ToString())).ToList());
 
                 list = list.OrderBy(o => o.DepartureTime).ToList();
             }
