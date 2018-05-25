@@ -12,7 +12,9 @@ namespace BusGobackHome.WebCore.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var item = new TimeList();
+            item.Refresh();
+            return View(item);
         }
 
         public IActionResult About()

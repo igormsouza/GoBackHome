@@ -1,4 +1,5 @@
-﻿@{
+﻿@model TimeList
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -9,6 +10,8 @@
             <div class="carousel-caption" role="option">
                 <p>
                     Check the real time of public transport from Park West.
+                    <br />
+                    Last Update: @Model.LastRefresh
                     <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
                         Refresh
                     </a>
@@ -16,7 +19,7 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 
 <div class="row">
@@ -26,56 +29,46 @@
     <div class="col-md-2">
         <h2>79A</h2>
         <ul>
-            <li>15 min</li>
-            <li>25 min</li>
-            <li>35 min</li>
-            <li>45 min</li>
-            <li>55 min</li>
-            <li>65 min</li>
+            @foreach (var item in Model.Bus79a)
+            {
+                <li>@item.DepartureTimeStr</li>
+            }
         </ul>
     </div>
     <div class="col-md-2">
         <h2>151</h2>
         <ul>
-            <li>15 min</li>
-            <li>25 min</li>
-            <li>35 min</li>
-            <li>45 min</li>
-            <li>55 min</li>
-            <li>65 min</li>
+            @foreach (var item in Model.Bus151)
+            {
+            <li>@item.DepartureTimeStr</li>
+            }
         </ul>
     </div>
     <div class="col-md-2">
         <h2>860</h2>
         <ul>
-            <li>15 min</li>
-            <li>25 min</li>
-            <li>35 min</li>
-            <li>45 min</li>
-            <li>55 min</li>
-            <li>65 min</li>
+            @foreach (var item in Model.Bus860)
+            {
+                <li>@item.DepartureTimeStr</li>
+            }
         </ul>
     </div>
     <div class="col-md-2">
         <h2>Luas</h2>
         <ul>
-            <li>15 min</li>
-            <li>25 min</li>
-            <li>35 min</li>
-            <li>45 min</li>
-            <li>55 min</li>
-            <li>65 min</li>
+            @foreach (var item in Model.Luas)
+            {
+                <li>@item.DepartureTimeStr</li>
+            }
         </ul>
     </div>
     <div class="col-md-2">
         <h2>Train</h2>
         <ul>
-            <li>15 min</li>
-            <li>25 min</li>
-            <li>35 min</li>
-            <li>45 min</li>
-            <li>55 min</li>
-            <li>65 min</li>
+            @foreach (var item in Model.Train)
+            {
+                <li>@item.DepartureTimeStr</li>
+            }
         </ul>
     </div>
 </div>
