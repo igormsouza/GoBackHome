@@ -1,0 +1,11 @@
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.deps.json
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.runtimeconfig.json
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.runtimeconfig.dev.json
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.dll
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.pdb
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.csprojResolveAssemblyReference.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.csproj.CoreCompileInputs.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.AssemblyInfoInputs.cache
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.AssemblyInfo.cs
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.dll
+C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.pdb
