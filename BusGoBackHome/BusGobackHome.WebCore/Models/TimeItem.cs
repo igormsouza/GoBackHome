@@ -21,7 +21,22 @@ namespace BusGobackHome.WebCore.Models
         {
             get
             {
-                return DepartureTime.ToString();
+                var result = "";
+
+                switch (DepartureTime)
+                {
+                    case 0:
+                        result = "due";
+                        break;
+                    case -1:
+                        result = "Service unavailable!";
+                        break;
+                    default:
+                        result = $"{DepartureTime} min";
+                        break;
+                }
+
+                return result;
             }
         }
     }

@@ -34,7 +34,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Train.Add(new TimeItem("error", "Service unavailable!"));
+                Train.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -50,7 +50,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Luas.Add(new TimeItem("error", "Service unavailable!"));
+                Luas.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -64,7 +64,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "Service unavailable!"));
+                Bus79a.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -80,7 +80,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "Service unavailable!"));
+                Bus79a.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -96,7 +96,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "Service unavailable!"));
+                Bus79a.Add(new TimeItem("error", "-1"));
             }
         }
 
