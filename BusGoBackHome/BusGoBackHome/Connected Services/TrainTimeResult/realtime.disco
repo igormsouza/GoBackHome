@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://api.irishrail.ie/realtime/realtime.asmx?wsdl" docRef="http://api.irishrail.ie/realtime/realtime.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://api.irishrail.ie/realtime/realtime.asmx" xmlns:q1="http://api.irishrail.ie/realtime/" binding="q1:RealtimeSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://api.irishrail.ie/realtime/realtime.asmx" xmlns:q2="http://api.irishrail.ie/realtime/" binding="q2:RealtimeSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -41,10 +41,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\TrainTimeResult\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="RailTimeResult.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +79,40 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.getAllStationsXML_WithStationType1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.getCurrentTrainsXML_WithTrainType1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.getStationDataByCodeXML_WithNumMins1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.getStationDataByNameXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.getStationDataByNameXML_withNumMins1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objHaconPositions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objStation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objStationData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objStationFilter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objTrainMovements.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\BusGoBackHome.TrainTimeResult.objTrainPositions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TrainTimeResult\realtime.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\TimeItem.datasource" />
     <None Include="Properties\Settings.settings">
@@ -84,7 +126,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\TrainTimeResult\realtime.disco" />
+    <None Include="Connected Services\TrainTimeResult\configuration91.svcinfo" />
+    <None Include="Connected Services\TrainTimeResult\configuration.svcinfo" />
+    <None Include="Connected Services\TrainTimeResult\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="nextstep.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\TrainTimeResult\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,7 +25,7 @@ namespace BusGoBackHome
             InitializeComponent();
             //RefreshScreen();
 
-            this.ClientSize = new System.Drawing.Size(467, 360);
+            this.ClientSize = new System.Drawing.Size(520, 450);
             this.Name = "Program";
 
             trayMenu = new ContextMenu();
@@ -95,20 +95,25 @@ namespace BusGoBackHome
             {
                 WebClient client = new WebClient();
                 string reply79a = client.DownloadString(bus79a);
-                var objReplay79a = JsonConvert.DeserializeObject<TimeResultApi>(reply79a);
+                var objReply79a = JsonConvert.DeserializeObject<TimeResultApi>(reply79a);
 
                 string reply151 = client.DownloadString(bus151);
-                var objReplay151 = JsonConvert.DeserializeObject<TimeResultApi>(reply151);
+                var objReply151 = JsonConvert.DeserializeObject<TimeResultApi>(reply151);
 
                 string replyLuas = client.DownloadString(luas);
-                var objReplayLuas = JsonConvert.DeserializeObject<LuasTimeResultApi>(replyLuas);
+                var objReplyLuas = JsonConvert.DeserializeObject<LuasTimeResultApi>(replyLuas);
 
-                var objReplay860 = new DirectTimeResult();
+                var objReply860 = new DirectTimeResult();
 
-                list.AddRange(objReplay79a.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
-                list.AddRange(objReplay151.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
-                list.AddRange(objReplayLuas.trams.Take(3).Select(o => new TimeItem("Luas " + o.destination, o.dueMinutes)).ToList());
-                list.AddRange(objReplay860.Result.Take(3).Select(o => new TimeItem("860(Direct) ", o.ToString())).ToList());
+                var replyTrain = new TrainTimeResult.RealtimeSoapClient();
+                var objReplyTrain = replyTrain.getStationDataByNameXML1("Cherry Orchard");
+                var objConvertedTrain = new RailTimeResult(objReplyTrain);
+
+                list.AddRange(objReply79a.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
+                list.AddRange(objReply151.results.Take(3).Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
+                list.AddRange(objReplyLuas.trams.Take(3).Select(o => new TimeItem("Luas " + o.destination, o.dueMinutes)).ToList());
+                list.AddRange(objReply860.Result.Take(3).Select(o => new TimeItem("860(Direct) ", o.ToString())).ToList());
+                list.AddRange(objConvertedTrain.Result.Take(3).Select(o => new TimeItem(o.Name , o.DueTime.ToString())).ToList());
 
                 list = list.OrderBy(o => o.DepartureTime).ToList();
             }

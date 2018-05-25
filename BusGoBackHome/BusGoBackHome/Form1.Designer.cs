@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.grid);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 291);
+            this.panel1.Size = new System.Drawing.Size(488, 391);
             this.panel1.TabIndex = 0;
             // 
             // btnRefresh
@@ -84,7 +84,7 @@
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
             this.grid.RowTemplate.Height = 24;
-            this.grid.Size = new System.Drawing.Size(425, 236);
+            this.grid.Size = new System.Drawing.Size(485, 336);
             this.grid.TabIndex = 0;
             // 
             // nameDataGridViewTextBoxColumn
@@ -95,6 +95,7 @@
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             this.nameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nameDataGridViewTextBoxColumn.Width = 200;
             // 
             // departureTimeDataGridViewTextBoxColumn
             // 
@@ -115,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 315);
+            this.ClientSize = new System.Drawing.Size(512, 415);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "Form1";

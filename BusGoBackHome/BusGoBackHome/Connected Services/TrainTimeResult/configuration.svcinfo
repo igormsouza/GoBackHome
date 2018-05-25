@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;RealtimeSoap&quot; /&gt;" bindingType="basicHttpBinding" name="RealtimeSoap" />
+    <binding digest="System.ServiceModel.Configuration.CustomBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;RealtimeSoap12&quot;&gt;&lt;httpTransport /&gt;&lt;textMessageEncoding messageVersion=&quot;Soap12&quot; /&gt;&lt;/Data&gt;" bindingType="customBinding" name="RealtimeSoap12" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://api.irishrail.ie/realtime/realtime.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;RealtimeSoap&quot; contract=&quot;TrainTimeResult.RealtimeSoap&quot; name=&quot;RealtimeSoap&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://api.irishrail.ie/realtime/realtime.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;RealtimeSoap&quot; contract=&quot;TrainTimeResult.RealtimeSoap&quot; name=&quot;RealtimeSoap&quot; /&gt;" contractName="TrainTimeResult.RealtimeSoap" name="RealtimeSoap" />
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://api.irishrail.ie/realtime/realtime.asmx&quot; binding=&quot;customBinding&quot; bindingConfiguration=&quot;RealtimeSoap12&quot; contract=&quot;TrainTimeResult.RealtimeSoap&quot; name=&quot;RealtimeSoap12&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://api.irishrail.ie/realtime/realtime.asmx&quot; binding=&quot;customBinding&quot; bindingConfiguration=&quot;RealtimeSoap12&quot; contract=&quot;TrainTimeResult.RealtimeSoap&quot; name=&quot;RealtimeSoap12&quot; /&gt;" contractName="TrainTimeResult.RealtimeSoap" name="RealtimeSoap12" />
+  </endpoints>
+</configurationSnapshot>
