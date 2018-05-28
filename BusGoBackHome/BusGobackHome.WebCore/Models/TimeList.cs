@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Net;
+using static TrainTimeResult.RealtimeSoapClient;
 
 namespace BusGobackHome.WebCore.Models
 {
@@ -30,7 +31,10 @@ namespace BusGobackHome.WebCore.Models
             try
             {
                 Train = new List<TimeItem>();
-                throw new NotImplementedException();
+                var replyTrain = new TrainTimeResult.RealtimeSoapClient(EndpointConfiguration.RealtimeSoap);
+                var objReplyTrain = replyTrain.getStationDataByNameXML1Async("Cherry Orchard");
+                var objConvertedTrain = new RailTimeResult(objReplyTrain);
+                Train.AddRange(objConvertedTrain.Result.Select(o => new TimeItem(o.Name, o.DueTime.ToString(), true)).ToList());
             }
             catch (Exception ex)
             {
@@ -45,8 +49,8 @@ namespace BusGobackHome.WebCore.Models
                 Luas = new List<TimeItem>();
                 WebClient client = new WebClient();
                 string reply = client.DownloadString(addressLuas);
-                var objReply = JsonConvert.DeserializeObject<TimeResultApi>(reply);
-                Luas.AddRange(objReply.results.Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
+                var objReply = JsonConvert.DeserializeObject<LuasTimeResultApi>(reply);
+                Luas.AddRange(objReply.trams.Select(o => new TimeItem(o.destination, o.dueMinutes, true)).ToList());
             }
             catch (Exception ex)
             {

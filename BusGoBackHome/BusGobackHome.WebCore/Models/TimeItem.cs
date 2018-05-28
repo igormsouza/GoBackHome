@@ -13,9 +13,16 @@ namespace BusGobackHome.WebCore.Models
             DepartureTime = aux;
         }
 
+        public TimeItem(string name, string departureTime, bool useName) : this(name, departureTime)
+        {
+            UseName = useName;
+        }
+
         public string Name { get; set; }
 
         public int DepartureTime { get; set; }
+
+        public bool UseName { get; set; }
 
         public string DepartureTimeStr
         {
@@ -23,17 +30,35 @@ namespace BusGobackHome.WebCore.Models
             {
                 var result = "";
 
-                switch (DepartureTime)
+                if (!UseName)
                 {
-                    case 0:
-                        result = "due";
-                        break;
-                    case -1:
-                        result = "Service unavailable!";
-                        break;
-                    default:
-                        result = $"{DepartureTime} min";
-                        break;
+                    switch (DepartureTime)
+                    {
+                        case 0:
+                            result = "due";
+                            break;
+                        case -1:
+                            result = "Service unavailable!";
+                            break;
+                        default:
+                            result = $"{DepartureTime} min";
+                            break;
+                    }
+                }
+                else
+                {
+                    switch (DepartureTime)
+                    {
+                        case 0:
+                            result = $"due ({Name})";
+                            break;
+                        case -1:
+                            result = "Service unavailable!";
+                            break;
+                        default:
+                            result = $"{DepartureTime} min  ({Name})";
+                            break;
+                    }
                 }
 
                 return result;
