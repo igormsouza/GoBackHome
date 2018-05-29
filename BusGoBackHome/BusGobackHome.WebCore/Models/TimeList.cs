@@ -42,14 +42,13 @@ namespace BusGobackHome.WebCore.Models
                 JObject obj = JObject.Parse(reply);
                 JToken joke = obj.SelectToken("$.value");
 
-                ChuckNorrisJoke = "Chuck Norris stopped this from happening";
                 if (joke != null)
                     ChuckNorrisJoke = ((JValue)joke).Value.ToString();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Bus79a.Add(new TimeItem("error", "-1"));
+                ChuckNorrisJoke = "Chuck Norris stopped this from happening.";
             }
         }
 
