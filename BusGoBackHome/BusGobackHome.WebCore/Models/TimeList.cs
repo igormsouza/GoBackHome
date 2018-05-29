@@ -53,7 +53,7 @@ namespace BusGobackHome.WebCore.Models
                 WebClient client = new WebClient();
                 string reply = client.DownloadString(addressLuas);
                 var objReply = JsonConvert.DeserializeObject<LuasTimeResultApi>(reply);
-                Luas.AddRange(objReply.trams.Select(o => new TimeItem(o.destination, o.dueMinutes, true)).ToList());
+                Luas.AddRange(objReply.trams.Select(o => new TimeItem(o.destination, o.dueMinutes, true)).OrderBy(t => t.DepartureTime).ToList());
             }
             catch (Exception ex)
             {
