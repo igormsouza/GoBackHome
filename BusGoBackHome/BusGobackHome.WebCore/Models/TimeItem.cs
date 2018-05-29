@@ -41,7 +41,7 @@ namespace BusGobackHome.WebCore.Models
                             result = "Service unavailable!";
                             break;
                         default:
-                            result = $"{DepartureTime} min";
+                            result = $"{ConvertTime(DepartureTime)}";
                             break;
                     }
                 }
@@ -56,12 +56,26 @@ namespace BusGobackHome.WebCore.Models
                             result = "Service unavailable!";
                             break;
                         default:
-                            result = $"{DepartureTime} min  ({Name})";
+                            result = $"{ConvertTime(DepartureTime)} ({Name})";
                             break;
                     }
                 }
 
                 return result;
+            }
+        }
+
+        private string ConvertTime(int totalMinutes)
+        {
+            TimeSpan ts = TimeSpan.FromMinutes(totalMinutes);
+
+            if (ts.Hours > 0)
+            {
+                return $"{ts.Hours} h : {ts.Minutes} min";
+            }
+            else
+            {
+                return $"{ts.Minutes} min";
             }
         }
     }

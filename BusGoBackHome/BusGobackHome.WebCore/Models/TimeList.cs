@@ -15,7 +15,9 @@ namespace BusGobackHome.WebCore.Models
 
         public void Refresh()
         {
-            LastRefresh = DateTime.Now.ToString("HH:mm");
+            DateTime dateTime = DateTime.UtcNow;
+            TimeZoneInfo time = TimeZoneInfo.FindSystemTimeZoneById("GMT Standard Time");
+            LastRefresh = TimeZoneInfo.ConvertTimeFromUtc(dateTime, time).ToString("HH:mm:ss");
 
             Calculate79();
             Calculate151();
