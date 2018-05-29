@@ -2,16 +2,23 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-
+<style>
+    h1, p {
+        color: white;
+        line-height: 1.4;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+</style>
 <div class="card text-center" style="background-color:#1d4380;">
     <div class="card-body">
         <br />
-        <br />
-        <p class="card-title"  style="color:white;font-size: 20px;line-height: 1.4;text-align: center;text-shadow: 0 1px 2px rgba(0,0,0,.6);">
-            Check the real time of public transport from Park West.
-        </p>
-        <p class="card-text"  style="color:white;font-size: 20px;line-height: 1.4;text-align: center;text-shadow: 0 1px 2px rgba(0,0,0,.6);">
-            Last Update: @Model.LastRefresh
+        <h1>Park West Commute</h1>
+        @*<p class="card-title">
+                Check the real time of public transport from Park West.
+            </p>*@
+        <p class="card-text">
+            Last Updated: @Model.LastRefresh
         </p>
         <a class="btn btn-default" href="@Url.Action("Index", "Home")">
             Refresh
@@ -37,7 +44,7 @@
         <ul>
             @foreach (var item in Model.Bus151)
             {
-            <li>@item.DepartureTimeStr</li>
+                <li>@item.DepartureTimeStr</li>
             }
         </ul>
     </div>
@@ -67,5 +74,11 @@
                 <li>@item.DepartureTimeStr</li>
             }
         </ul>
+    </div>
+
+    <div>
+        <b><u>Just for the craic, here is a Chuck Norris joke!!</u></b>
+        <br />
+        @Model.ChuckNorrisJoke
     </div>
 </div>
