@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,30 +25,6 @@ namespace BusGobackHome.WebCore.Models
             CalculateLuas();
             CalculateTrain();
 
-            //Shidin - testing out my checkin
-            GetJoke();
-        }
-
-        /// <summary>
-        /// Get a random Chuck Norris Joke
-        /// </summary>
-        private void GetJoke()
-        {
-            try
-            {
-                WebClient client = new WebClient();
-                string reply = client.DownloadString("https://api.chucknorris.io/jokes/random");
-                JObject obj = JObject.Parse(reply);
-                JToken joke = obj.SelectToken("$.value");
-
-                if (joke != null)
-                    ChuckNorrisJoke = ((JValue)joke).Value.ToString();
-
-            }
-            catch (Exception)
-            {
-                ChuckNorrisJoke = "Chuck Norris stopped this from happening.";
-            }
         }
 
         #region Fill lists 
@@ -145,7 +120,5 @@ namespace BusGobackHome.WebCore.Models
         public List<TimeItem> Luas { get; set; }
 
         public List<TimeItem> Train { get; set; }
-
-        public string ChuckNorrisJoke { get; set; }
     }
 }
