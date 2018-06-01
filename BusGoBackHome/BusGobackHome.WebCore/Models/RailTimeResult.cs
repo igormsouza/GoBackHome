@@ -23,13 +23,17 @@ namespace BusGobackHome.WebCore.Models
 
         private void CalculateDueTime()
         {
+            DateTime dateTime = DateTime.UtcNow;
+            TimeZoneInfo time = TimeZoneInfo.FindSystemTimeZoneById("GMT Standard Time");
+            var currentTime = TimeZoneInfo.ConvertTimeFromUtc(dateTime, time);
+
             //16:03
             //var aux = objReplyTrain.ToList().Where(o => o.Scharrival.Contains(":")).Select(o => ConvertTimeStringToDatetime(o.Scharrival) >= DateTime.Now).ToList();
             var auxConvert = objReplyTrain.Where(o => o.Scharrival.Contains(":")).Select(o => new ItemRailTimeResult() { Time = ConvertTimeStringToDatetime(o.Scharrival), Name = o.Direction });
-            var aux = auxConvert.Where(o => o.Time > DateTime.Now).OrderBy(o => o.Time).ToList();
+            var aux = auxConvert.Where(o => o.Time > currentTime).OrderBy(o => o.Time).ToList();
             foreach (var item in aux)
             {
-                int dueMin = (int)item.Time.Subtract(DateTime.Now).TotalMinutes;
+                int dueMin = (int)item.Time.Subtract(currentTime).TotalMinutes;
                 item.DueTime = dueMin;
 
                 Result.Add(item);
