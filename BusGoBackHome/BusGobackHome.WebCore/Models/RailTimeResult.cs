@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using TrainTimeResult;
 
@@ -29,13 +28,12 @@ namespace BusGobackHome.WebCore.Models
 
             //16:03
             //var aux = objReplyTrain.ToList().Where(o => o.Scharrival.Contains(":")).Select(o => ConvertTimeStringToDatetime(o.Scharrival) >= DateTime.Now).ToList();
-            var auxConvert = objReplyTrain.Where(o => o.Scharrival.Contains(":")).Select(o => new ItemRailTimeResult() { Time = ConvertTimeStringToDatetime(o.Scharrival), Name = o.Direction });
+            var auxConvert = objReplyTrain.Where(o => o.Scharrival.Contains(":")).Select(o => new ItemRailTimeResult() { Time = ConvertTimeStringToDatetime(o.Scharrival), Name = o.Direction, Delay = o.Late });
             var aux = auxConvert.Where(o => o.Time > currentTime).OrderBy(o => o.Time).ToList();
             foreach (var item in aux)
             {
                 int dueMin = (int)item.Time.Subtract(currentTime).TotalMinutes;
-                item.DueTime = dueMin;
-
+                item.DueTime = dueMin + item.Delay; //Add the Delay to the Due Time - SHaridas
                 Result.Add(item);
             }
         }
@@ -61,5 +59,8 @@ namespace BusGobackHome.WebCore.Models
         public DateTime Time { get; set; }
 
         public int DueTime { get; set; }
+
+        public int Delay { get; set; }
+
     }
 }
