@@ -9,7 +9,7 @@ namespace BusGobackHome.WebCore.Models
     {
         public TimeList TimeList { get; set; }
 
-        public bool Succed { get; set; }
+        public bool Succeed { get; set; }
 
         public string ErrorMsg { get; set; }
     }
