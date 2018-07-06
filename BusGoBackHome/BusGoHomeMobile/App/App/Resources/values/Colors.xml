@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Material Design-->
+  <color name="primaryColor">#fafafa</color>
+  <color name="primaryDark">#fafafa</color>
+  <color name="primaryText">#212121</color>
+  <color name="secondaryText">#757575</color>
+  <color name="colorControlNormal">#212121</color>
+  <color name="accent">#002469</color>
+  <color name="window_background">#FFFFFF</color>
+  <!-- Other Colors -->
+  <color name="blueGradientStart">#163064</color>
+  <color name="blueGradientEnd">#3877d7</color>
+  <color name="grayMessage">#D9D9D9</color>
+  <color name="blueMessage">#365CA3</color>
+  <color name="divider">#E3E3E3</color>
+  <color name="defaultBackground">#F1F1F1</color>
+  <color name="blueButton">#002469</color>
+  <color name="blueButtonPressed">#000AAA</color>
+  <color name="clearButton">#FF3B30</color>
+  <color name="grayButton">#6B6B6B</color>
+  <color name="grayPressedButton">#737373</color>
+  <color name="redButton">#FF3B30</color>
+  <color name="redPressedButton">#FF6639</color>
+  <color name="hintColor">#a8a8aa</color>
+  <color name="labelColor">#F9E115</color>
+  <color name="whiteButtonPressed">#DCDCDC</color>
+  <color name="transparent">#00000000</color>
+  <color name="preto">#000000</color>
+
+  <color name="views">#F5F5F5</color>
+  <color name="textoAnuncioVendaTrocaDoacaoAtivo">#113273</color>
+  <color name="textoAnuncioVendaTrocaDoacaoInativo">#B1B1B1</color>
+  <color name="greyBackgroundTransparent">#CCE0E0E0 </color>
+  <color name="textoCaracteristicasAdicionaisHabilitado">#203976</color>
+  <color name="textoCaracteristicasAdicionaisDesabilitado">#D0D0D0</color>
+  <color name="backgroundFotoAnuncio">#DFDFDF</color>
+  <color name="textSilverColor">#c0c0c0</color>
+  
+</resources>
