@@ -122,11 +122,11 @@ namespace App.Util
                 }
 
             }
-            catch (System.Net.WebException ex)
+            catch (System.Net.WebException)
             {
                 result.SetarMsgErro("Sorry, there is a problem to connect with our services.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 result.SetarMsgErro("Error.");
             }

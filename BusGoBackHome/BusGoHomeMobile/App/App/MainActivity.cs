@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using App.Util;
 using App.DTO;
 using Android.Views;
+using System;
 
 namespace App
 {
@@ -21,7 +22,7 @@ namespace App
             GetTimeAsync();
         }
         
-        private async Task GetTimeAsync()
+        private async void GetTimeAsync()
         {
             var loading = ProgressDialog.Show(this, "Park West Commute", "Loading...", true);
 
@@ -52,7 +53,7 @@ namespace App
                     AddTab("Train", new TrainFragment());
                 }
             }
-            catch (System.Exception ex)
+            catch (Exception)
             {
                 UtilMessage.PopUpMessage(this, "Error", "Error");
             }
