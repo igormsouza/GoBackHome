@@ -11,3 +11,16 @@ C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\net
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.pdb
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\wwwroot\images\ParkWestLogo.png
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\wwwroot\images\TechDataLogo.jpg
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.deps.json
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.runtimeconfig.json
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.runtimeconfig.dev.json
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.AssemblyInfo.cs
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\wwwroot\images\ParkWestLogo.png
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\wwwroot\images\TechDataLogo.jpg
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.dll
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\bin\Debug\netcoreapp2.0\BusGobackHome.WebCore.pdb
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.csprojAssemblyReference.cache
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.csproj.CoreCompileInputs.cache
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.AssemblyInfoInputs.cache
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.dll
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGobackHome.WebCore\obj\Debug\netcoreapp2.0\BusGobackHome.WebCore.pdb

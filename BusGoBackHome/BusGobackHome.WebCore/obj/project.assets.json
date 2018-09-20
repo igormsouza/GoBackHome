@@ -3774,7 +3774,7 @@
           "lib/netstandard1.3/System.Private.DataContractSerialization.dll": {}
         }
       },
-      "System.Private.ServiceModel/4.4.2": {
+      "System.Private.ServiceModel/4.4.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -4347,11 +4347,11 @@
           }
         }
       },
-      "System.ServiceModel.Duplex/4.4.2": {
+      "System.ServiceModel.Duplex/4.4.4": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.2",
-          "System.ServiceModel.Primitives": "4.4.1"
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
         },
         "compile": {
           "ref/netstandard2.0/System.ServiceModel.Duplex.dll": {}
@@ -4360,11 +4360,11 @@
           "lib/netstandard2.0/System.ServiceModel.Duplex.dll": {}
         }
       },
-      "System.ServiceModel.Http/4.4.2": {
+      "System.ServiceModel.Http/4.4.4": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.2",
-          "System.ServiceModel.Primitives": "4.4.1"
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
         },
         "compile": {
           "ref/netstandard2.0/System.ServiceModel.Http.dll": {}
@@ -4373,11 +4373,11 @@
           "lib/netstandard2.0/System.ServiceModel.Http.dll": {}
         }
       },
-      "System.ServiceModel.NetTcp/4.4.2": {
+      "System.ServiceModel.NetTcp/4.4.4": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.2",
-          "System.ServiceModel.Primitives": "4.4.1"
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
         },
         "compile": {
           "ref/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
@@ -4386,10 +4386,10 @@
           "lib/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
         }
       },
-      "System.ServiceModel.Primitives/4.4.1": {
+      "System.ServiceModel.Primitives/4.4.4": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.1"
+          "System.Private.ServiceModel": "4.4.4"
         },
         "compile": {
           "ref/netstandard2.0/System.ServiceModel.Primitives.dll": {},
@@ -4400,11 +4400,11 @@
           "lib/netstandard2.0/System.ServiceModel.dll": {}
         }
       },
-      "System.ServiceModel.Security/4.4.2": {
+      "System.ServiceModel.Security/4.4.4": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.2",
-          "System.ServiceModel.Primitives": "4.4.1"
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
         },
         "compile": {
           "ref/netstandard2.0/System.ServiceModel.Security.dll": {}
@@ -7581,7 +7581,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "v48T3DlpuEFpahFlfkGtJ4EmclnsEKYvNv0C4ac7TfrDxEb5xnTPKsqhBYgKyIm179tZOQpmZ38hqqIIV3pkQg==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -9958,11 +9958,12 @@
         "system.private.datacontractserialization.nuspec"
       ]
     },
-    "System.Private.ServiceModel/4.4.2": {
-      "sha512": "7lPNLr5icowsX0NhKz3Aqsx64rr4qYQUYNCDMmkdeGE25qDWX0r9PucuIJkvBeffn+4qWCLnROw8Ehy60WtbhA==",
+    "System.Private.ServiceModel/4.4.4": {
+      "sha512": "tRGIvhHCqfIkfHKwf4moJ+XxrcDLJnGlfdLaOMTIC+1a9bj0V9bOOJj6H2yuT3ITs3j3Or20oTaqqld91mM+eg==",
       "type": "package",
-      "path": "system.private.servicemodel/4.4.2",
+      "path": "system.private.servicemodel/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
@@ -9971,7 +9972,7 @@
         "runtimes/win7/lib/netcore50/System.Private.ServiceModel.dll",
         "runtimes/win7/lib/netstandard1.3/System.Private.ServiceModel.dll",
         "runtimes/win7/lib/netstandard2.0/System.Private.ServiceModel.dll",
-        "system.private.servicemodel.4.4.2.nupkg.sha512",
+        "system.private.servicemodel.4.4.4.nupkg.sha512",
         "system.private.servicemodel.nuspec",
         "version.txt"
       ]
@@ -11408,11 +11409,12 @@
         "version.txt"
       ]
     },
-    "System.ServiceModel.Duplex/4.4.2": {
-      "sha512": "HKCiCub7Z/RGNvmT9fkky0dslN05eAE8qR4T8v+ZD1FfFPED6cS/ijnLL7smVvu0YSavXZBzgQIo2OHySJXjKQ==",
+    "System.ServiceModel.Duplex/4.4.4": {
+      "sha512": "av0L+0quVcRKKIrPm1mjzcbP203Qk7Ni3AKzW+ozWdsEr9TzNREYmP8soCQtZBtT4bn3FPzkG40m8nIDAWqFWA==",
       "type": "package",
-      "path": "system.servicemodel.duplex/4.4.2",
+      "path": "system.servicemodel.duplex/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11441,16 +11443,17 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.duplex.4.4.2.nupkg.sha512",
+        "system.servicemodel.duplex.4.4.4.nupkg.sha512",
         "system.servicemodel.duplex.nuspec",
         "version.txt"
       ]
     },
-    "System.ServiceModel.Http/4.4.2": {
-      "sha512": "IeF9QT6bHlSgCw5KXldxOt78sGLC0cf/tH7MqfulAydUuWoWgI956AQwyru83lYPTS/eYn5b6UvJbs/33KbCWQ==",
+    "System.ServiceModel.Http/4.4.4": {
+      "sha512": "xK5Nhr8xxzBTjF9JpVSvHWsIxiwEwrE1ZlDGfYiyCSkHJnGyx3p8fXlTMa5wWF97QVNuu/D0apdl7b5U9t/TvQ==",
       "type": "package",
-      "path": "system.servicemodel.http/4.4.2",
+      "path": "system.servicemodel.http/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11485,16 +11488,17 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.http.4.4.2.nupkg.sha512",
+        "system.servicemodel.http.4.4.4.nupkg.sha512",
         "system.servicemodel.http.nuspec",
         "version.txt"
       ]
     },
-    "System.ServiceModel.NetTcp/4.4.2": {
-      "sha512": "j35YzVN/SYgtGV9Ltpc+56I0WTSQEC4z0TGWGFzC8Cx/0RH3o25fS3vRbrnk1ClI7T28pASx7ZgsNeySvuZI8g==",
+    "System.ServiceModel.NetTcp/4.4.4": {
+      "sha512": "sGZT0jGKyDBtWv3SD+Ldk4MinQEijEec1cVcNFnBvSFTt+awUeVZ2E2uBXHOeslosMscOHn8OSMG/Etblm0VlA==",
       "type": "package",
-      "path": "system.servicemodel.nettcp/4.4.2",
+      "path": "system.servicemodel.nettcp/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11526,16 +11530,17 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.nettcp.4.4.2.nupkg.sha512",
+        "system.servicemodel.nettcp.4.4.4.nupkg.sha512",
         "system.servicemodel.nettcp.nuspec",
         "version.txt"
       ]
     },
-    "System.ServiceModel.Primitives/4.4.1": {
-      "sha512": "vp7zTf2xEq8shjlT6IZj0nkmIl+3eoPVrxrFtMS14ldFyDHqe9KB6YNOc6oirkg0udPnF5tSpxlrtTqANDGoMQ==",
+    "System.ServiceModel.Primitives/4.4.4": {
+      "sha512": "/eHdBdoJ0n0d2zY9hN6T2SFu7lfjsvIg8Ej1w7mYL7FT6YwUQhnm3Gi5bMpFoOKaBpcJ98N9In7cNvYtsduaFg==",
       "type": "package",
-      "path": "system.servicemodel.primitives/4.4.1",
+      "path": "system.servicemodel.primitives/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11572,16 +11577,17 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.primitives.4.4.1.nupkg.sha512",
+        "system.servicemodel.primitives.4.4.4.nupkg.sha512",
         "system.servicemodel.primitives.nuspec",
         "version.txt"
       ]
     },
-    "System.ServiceModel.Security/4.4.2": {
-      "sha512": "89lX1gdMB4DE33dU8fzvxCudcvGRc5PVQ9K7u0ir3CRRcJki8A49aOU5EU/BiEZp+bXPUR805vb6H56WyOIvtQ==",
+    "System.ServiceModel.Security/4.4.4": {
+      "sha512": "8fL79L2pIrvZJZxh3ccrqWMWpQdrQ1eSYZ2xHFlTM/3fL/8H/HPpeHPZAIwd7ikq3qFgCKtjX/WJi+0hfM0pDw==",
       "type": "package",
-      "path": "system.servicemodel.security/4.4.2",
+      "path": "system.servicemodel.security/4.4.4",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11611,7 +11617,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.security.4.4.2.nupkg.sha512",
+        "system.servicemodel.security.4.4.4.nupkg.sha512",
         "system.servicemodel.security.nuspec",
         "version.txt"
       ]
@@ -12693,35 +12699,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\806920\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\igor.moreira\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\development\\Igor\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\BusGobackHome.WebCore.csproj",
+      "projectUniqueName": "C:\\Igor\\Git\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\BusGobackHome.WebCore.csproj",
       "projectName": "BusGobackHome.WebCore",
-      "projectPath": "C:\\development\\Igor\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\BusGobackHome.WebCore.csproj",
-      "packagesPath": "C:\\Users\\806920\\.nuget\\packages\\",
-      "outputPath": "C:\\development\\Igor\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\obj\\",
+      "projectPath": "C:\\Igor\\Git\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\BusGobackHome.WebCore.csproj",
+      "packagesPath": "C:\\Users\\igor.moreira\\.nuget\\packages\\",
+      "outputPath": "C:\\Igor\\Git\\GoBackHome\\BusGoBackHome\\BusGobackHome.WebCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\806920\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\igor.moreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

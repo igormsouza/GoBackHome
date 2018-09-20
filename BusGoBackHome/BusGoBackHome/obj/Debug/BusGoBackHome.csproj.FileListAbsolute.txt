@@ -23,3 +23,14 @@ C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHo
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.CopyComplete
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.exe
 C:\development\Igor\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.pdb
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Form1.resources
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.Properties.Resources.resources
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csproj.GenerateResource.Cache
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe.config
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.exe
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\BusGoBackHome.pdb
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.dll
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\bin\Debug\Newtonsoft.Json.xml
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.csprojResolveAssemblyReference.cache
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.exe
+C:\Igor\Git\GoBackHome\BusGoBackHome\BusGoBackHome\obj\Debug\BusGoBackHome.pdb
