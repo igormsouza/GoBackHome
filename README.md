@@ -11,5 +11,8 @@ Easiest way to check the public transport from Parkwest(Dublin 12) to another ar
 Web App:
 http://parkwestcommute.azurewebsites.net/
 
+Webapi for integrations *(json)*:
+http://parkwestcommute.azurewebsites.net/api/apihome
+
 Android App:
 https://play.google.com/store/apps/details?id=com.igor.parkwestcommute
