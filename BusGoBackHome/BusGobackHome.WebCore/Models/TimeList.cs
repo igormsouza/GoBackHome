@@ -71,7 +71,7 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "-1"));
+                Bus860.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -87,7 +87,23 @@ namespace BusGobackHome.WebCore.Models
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "-1"));
+                Bus151.Clear();
+                Calculate151DbOfficial();
+            }
+        }
+
+        private void Calculate151DbOfficial()
+        {
+            try
+            {
+                var reply = new DublinBus.DublinBusRTPIServiceSoapClient(DublinBus.DublinBusRTPIServiceSoapClient.EndpointConfiguration.DublinBusRTPIServiceSoap);
+                var objReply = reply.GetRealTimeStopDataAsync(6243, false).Result;
+                var objConverted = new BusTimeResult(objReply);
+                Bus151.AddRange(objConverted.Result.Select(o => new TimeItem(o.Name, o.DueTime.ToString())).ToList());
+            }
+            catch (Exception ex)
+            {
+                Bus151.Add(new TimeItem("error", "-1"));
             }
         }
 
@@ -97,13 +113,30 @@ namespace BusGobackHome.WebCore.Models
             {
                 Bus79a = new List<TimeItem>();
                 WebClient client = new WebClient();
+
                 string reply = client.DownloadString(addressBus79a);
                 var objReply = JsonConvert.DeserializeObject<TimeResultApi>(reply);
                 Bus79a.AddRange(objReply.results.Select(o => new TimeItem(o.route, o.departureduetime)).ToList());
             }
             catch (Exception ex)
             {
-                Bus79a.Add(new TimeItem("error", "-1"));
+                Bus79a.Clear();
+                Calculate79DbOfficial();
+            }
+        }
+
+        private void Calculate79DbOfficial()
+        {
+            try
+            {
+                var reply = new DublinBus.DublinBusRTPIServiceSoapClient(DublinBus.DublinBusRTPIServiceSoapClient.EndpointConfiguration.DublinBusRTPIServiceSoap);
+                var objReply = reply.GetRealTimeStopDataAsync(6030, false).Result;
+                var objConverted = new BusTimeResult(objReply);
+                Bus79a.AddRange(objConverted.Result.Select(o => new TimeItem(o.Name, o.DueTime.ToString())).ToList());
+            }
+            catch (Exception ex)
+            {
+                Train.Add(new TimeItem("error", "-1"));
             }
         }
 
